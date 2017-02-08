@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>自行车后台管理</title>
+    <link rel="stylesheet" type="text/css" href="css/easyui.css">
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+
+    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min.css?v=4.1.0" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+</head>
+
+<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+    <div class="common_top header">
+        <p class="fl">自行车后台管理系统</p>
+        <ul class="fr">
+            <li><span class="icon iconfont">&#xe607;</span><span>管理员</span></li>
+            <li><span class="icon iconfont">&#xe600;</span><span>设置</span></li>
+            <li><span class="icon iconfont">&#xe604;</span><span>注销</span></li>
+        </ul>
+    </div>
+    <div id="wrapper">
+        <!--左侧导航开始-->
+        <div class="navbar-default navbar-static-side nav_y" role="navigation">
+            <div class="nav-close"><i class="fa fa-times-circle"></i>
+            </div>
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    
+                    <li>
+                        <a href="#" class="index">
+                            <span class="nav-label">我的主页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon iconfont">&#xe602;</span><span class="nav-label">用户管理</span>
+                        </a>
+                        <ul class="nav nav-second-level disN">
+                            <li>
+                                <a class=" easyui-linkbutton" href="#" onclick="addTab('读卡模式','./html/main2_1.html')">读卡模式</a>
+                            </li>
+                            <li>
+                                <a class=" easyui-linkbutton" href="#" onclick="addTab('信息输入','./html/main2_2.html')">信息输入</a>
+                            </li>
+                            <li>
+                                <a class=" easyui-linkbutton" href="#" onclick="addTab('用户列表','./html/main2_3.html')">用户列表</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><span class="icon iconfont">&#xe602;</span><span class="nav-label">设备管理</span></a>
+                        <ul class="nav nav-second-level disN">
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('设备概况','./html/main3_1.html')">设备概况</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('管理箱信息','./html/main3_2.html')">管理箱信息</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('停车柱信息','./html/main3_3.html')">停车柱信息</a>
+                            </li>
+                            
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('自行车信息','./html/main3_4.html')">自行车信息</a>
+                            </li>
+                            
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('设备预警','./html/main3_5.html')">设备预警</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><span class="icon iconfont">&#xe602;</span><span class="nav-label">报表统计</span></a>
+                        <ul class="nav nav-second-level disN">
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('停车点统计报表','./html/main4_1.html')">停车点统计报表</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('区域统计报表','./html/main4_2.html')">区域统计报表</a>
+                            </li>
+                            <li>
+                                <a class=" easyui-linkbutton" href="#" onclick="addTab('借还量统计报表','./html/main4_3.html')">借还量统计报表</a>
+                                
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('卡类型借还量统计','./html/main4_4.html')">卡类型借还量统计</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('特殊卡借还量统计','./html/main4_5.html')">特殊卡借还量统计</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('租赁费统计报表','./html/main4_6.html')">租赁费统计报表</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('时段借还量统计','./html/main4_7.html')">时段借还量统计</a>
+                            </li>
+                            <li>
+                                <a class=" easyui-linkbutton" href="#" onclick="addTab('财务统计报表','./html/main4_8.html')">财务统计报表</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('业务记录报表','./html/main4_9.html')">业务记录报表</a>
+                            </li>
+                            <li>
+                                <a class=" easyui-linkbutton" href="#" onclick="addTab('财务查询报表','./html/main4_10.html')">财务查询报表</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('开户销户报表','./html/main4_11.html')">开户销户报表</a>
+                            </li>
+                            <li>
+                                <a class=" easyui-linkbutton" href="#" onclick="addTab('客服办卡统计报表','./html/main4_12.html')">客服办卡统计报表</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('用户使用记录','./html/main4_13.html')">用户使用记录</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('租车排名统计报表','./html/main4_14.html')">租车排名统计报表</a>
+                            </li>
+                            <li>
+                                <a class=" easyui-linkbutton" href="#" onclick="addTab('开户统计报表','./html/main4_15.html')">开户统计报表</a>
+                            </li>
+                            <li>
+                                <a class=" easyui-linkbutton" href="#" onclick="addTab('租赁卡统计','./html/main4_16.html')">租赁卡统计</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><span class="icon iconfont">&#xe602;</span><span class="nav-label">运营管理</span></a>
+                        <ul class="nav nav-second-level disN">
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('电话留言','./html/main5_1.html')">电话留言</a>
+                            </li>
+                            <li>
+                                <a class=" easyui-linkbutton" href="#" onclick="addTab('咨询与投诉','./html/main5_2.html')">咨询与投诉</a>
+                            </li>
+                            <li class="borbot"><a class=" easyui-linkbutton" href="#" onclick="addTab('车辆理赔','./html/main5_3.html')">车辆理赔</a>
+                            </li>
+                            <li class="bortop"><a class=" easyui-linkbutton" href="#" onclick="addTab('电费管理','./html/main5_4.html')">电费管理</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('员工出勤','./html/main5_5.html')">员工出勤</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('在线用户','./html/main5_6.html')">在线用户</a>
+                            </li>
+                            <li>
+                                <a class=" easyui-linkbutton" href="#" onclick="addTab('登陆记录','./html/main5_7.html')">登陆记录</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><span class="icon iconfont">&#xe602;</span><span class="nav-label">系统设置</span></a>
+                        <ul class="nav nav-second-level disN">
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('自行车类型','./html/main6_1.html')">自行车类型</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('有效卡','./html/main6_2.html')">有效卡</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('卡类型管理','./html/main6_3.html')">卡类型管理</a>
+                            </li>
+                            <li class="borbot"><a class=" easyui-linkbutton" href="#" onclick="addTab('禁用卡','./html/main6_4.html')">禁用卡</a>
+                            </li>
+                            <li class="bortop"><a class=" easyui-linkbutton" href="#" onclick="addTab('区域设置','./html/main6_5.html')">区域设置</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('片区设置','./html/main6_6.html')">片区设置</a>
+                            </li>
+                            <li class="borbot"><a class=" easyui-linkbutton" href="#" onclick="addTab('停车点','./html/main6_7.html')">停车点</a>
+                            </li>
+                            <li class="bortop"><a class=" easyui-linkbutton" href="#" onclick="addTab('通知公告','./html/main6_8.html')">通知公告</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('异常参数','./html/main6_9.html')">异常参数</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('参数下发','./html/main6_10.html')">参数下发</a>
+                            </li>
+                            <li><a class=" easyui-linkbutton" href="#" onclick="addTab('费率表设置','./html/main6_11.html')">费率表设置</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                
+
+                </ul>
+            </div>
+        </div>
+        <!--左侧导航结束-->
+        <!--右侧部分开始-->
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            
+            
+            <div id="content-main" class="easyui-tabs row J_mainContent" style="height: 100%!important">
+                <div title="Home">
+                <iframe src="./html/index.html" width="100%" frameborder="0" id="external-frame"></iframe>
+                </div>
+            </div>
+            
+        </div>
+        <!--右侧部分结束-->
+
+       
+        
+    </div>
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript">
+        $(".nav-second-level .easyui-linkbutton").click(function () {
+            $(".nav-second-level .easyui-linkbutton").removeClass('index_active');
+            $(this).addClass('index_active');
+           
+        })
+        $(".index").click(function () {
+            $(".page-tabs-content .J_menuTab").eq(0).trigger('click');
+            $("#side-menu li").removeClass('active');
+            $("#side-menu li ul").removeClass('in');
+        })
+        $(".nav-label").click(function () {
+            if ($(this).parents('a').next('ul').is(':hidden')) {
+                $('.nav .iconfont').css('transform', 'rotate(0deg)');
+                $(".nav-second-level").hide(200);
+                $(this).parents('a').next('ul').show(200);
+                $(this).prev('.nav .iconfont').css('transform', 'rotate(90deg)');
+            }else{
+                $(this).parents('a').next('ul').hide(200);
+                $(this).prev('.nav .iconfont').css('transform', 'rotate(0deg)');
+            }
+            
+        })
+    </script>
+    <script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+    <script>
+        function addTab(title, url){
+            if ($('#content-main').tabs('exists', title)){
+                $('#content-main').tabs('select', title);
+            } else {
+                var content = '<iframe scrolling="auto" frameborder="0"  src="'+url+'" style="width:100%;"></iframe>';
+                $('#content-main').tabs('add',{
+                    title:title,
+                    content:content,
+                    closable:true
+                });
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        $(".index .nav-label").click(function () {
+            $(".tabs li").eq(0).trigger('click')
+        })
+        
+    </script>
+
+    <script>
+        /*
+         * When the iframe is on a different subdomain, uncomment the following line
+         * and change "example.com" to your domain.
+         */
+        // document.domain = "example.com";
+        function setIframeHeight(iframe) {
+            if (iframe) {
+                var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+                if (iframeWin.document.body) {
+                    iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+                }
+            }
+            console.log(1);
+        };
+
+        window.onload = function () {
+            setIframeHeight(document.getElementById('external-frame'));
+        };
+
+    </script>
+</body>
+
+</html>
