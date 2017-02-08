@@ -255,9 +255,8 @@
             console.log(1);
         };
         $(".easyui-linkbutton").click(function () {
-            window.onload = function () {
-                setIframeHeight(document.getElementById('external-frame'));
-            };
+            $('#external-frame').css('height','100%');
+            alert(11)
 
         })
         window.onload = function () {
