@@ -182,7 +182,7 @@
             
             <div id="content-main" class="easyui-tabs row J_mainContent" style="height: 100%!important">
                 <div title="Home">
-                <iframe src="./html/index.html" width="100%" frameborder="0" id="external-frame"></iframe>
+                <iframe src="./html/index.html" width="100%" frameborder="0" ></iframe>
                 </div>
             </div>
             
@@ -223,7 +223,7 @@
             if ($('#content-main').tabs('exists', title)){
                 $('#content-main').tabs('select', title);
             } else {
-                var content = '<iframe scrolling="auto" frameborder="0"  src="'+url+'" style="width:100%;"></iframe>';
+                var content = '<iframe scrolling="auto" frameborder="0"  src="'+url+'" style="width:100%;" class="external-frame"></iframe>';
                 $('#content-main').tabs('add',{
                     title:title,
                     content:content,
@@ -255,7 +255,7 @@
             console.log(1);
         };
         $(".easyui-linkbutton").click(function () {
-            $('#external-frame').css('height','100%');
+            $('.external-frame').css('height', '99%');
         })
         window.onload = function () {
             setIframeHeight(document.getElementById('external-frame'));
