@@ -254,7 +254,12 @@
             }
             console.log(1);
         };
+        $(".easyui-linkbutton").click(function () {
+            window.onload = function () {
+                setIframeHeight(document.getElementById('external-frame'));
+            };
 
+        })
         window.onload = function () {
             setIframeHeight(document.getElementById('external-frame'));
         };
