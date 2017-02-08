@@ -87,7 +87,7 @@ body.fixed-sidebar .navbar-static-side,.nav_y{border-right: 1px solid #cccccc}
 .use3_3 li{display: inline-block;width: 48%;height: 30px;line-height: 30px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;font-size: 14px;}
 .input3_3{width: 68.5%;margin-left: 1.5%;border: 0px solid #ccc}
 .input3_3 li{display: inline-block;width: 32%;height: 55px;line-height: 55px;font-size: 14px;}
-.input3_3 li input{height: 28px;width: calc(100% - 110px);padding: 0 5px;border-radius: 3px;font-weight: 100;}
+.input3_3 li input{height: 28px;width: calc(100% - 110px);padding: 0 5px;border-radius: 3px;font-weight: 100;width: 54%\9}
 .input3_3 li span{width: 85px;text-align: right;width: 39%\9}
 .input3_3 li select{display: inline-block;height: 28px;width: calc(100% - 160px);width: 54%\9}
 .input3_3 input[type="button"]{height: 33px;color: #fff;width: 80px;position: relative;left: calc(100% - 65px);cursor: pointer;text-align: center;}
